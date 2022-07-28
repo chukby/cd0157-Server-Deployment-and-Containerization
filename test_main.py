@@ -37,6 +37,4 @@ def test_auth(client):
 
     assert response.status_code == 200
     token = response.json['token']
-    blank_token = token is None
     assert token is not None
-    assert blank_token
